@@ -1,0 +1,32 @@
+.header-section {
+  background-color: rgba($color-white, 1);
+  .logo-box {
+    text-align: end;
+    a {
+      img {
+        height: 60px;
+      }
+    }
+  }
+  .nav-box {
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        a {
+          display: block;
+          padding: 30px 20px;
+          font-size: 16px;
+          font-weight: 600;
+          color: $color-black;
+          @extend%trans2;
+          &:hover,
+          &.active {
+            color: $color-white;
+            background-color: rgba($color-primary-dark, 0.9);
+          }
+        }
+      }
+    }
+  }
+}

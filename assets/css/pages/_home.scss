@@ -1,0 +1,119 @@
+.intro-section {
+  padding: 0px 0 0;
+  height: 91vh;
+  .intro-content {
+    .title {
+      padding-bottom: 40px;
+      font-size: 60px;
+      font-weight: 600;
+      color: $color-white;
+    }
+  }
+  .img-box {
+    height: 100%;
+    text-align: end;
+    img {
+      transform: rotateY(190deg);
+      max-width: 100%;
+      height: 100%;
+      text-align: center;
+      filter: brightness(1.2) saturate(1.2) contrast(1.01);
+    }
+  }
+}
+
+.border-left {
+  border-left: 1px solid rgba($color-white, 0.3);
+  &:last-of-type {
+    border-left: 0;
+  }
+}
+.serves-box {
+  padding: 40px 20px;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  @extend%trans2;
+  background-color: rgba($color-primary-dark, 0.3);
+  &:hover {
+    .serves-title {
+      color: rgba($color-black, 1);
+    }
+    .img-box {
+      border-color: transparent;
+      background-color: $color-white;
+    }
+  }
+  a {
+    position: absolute;
+    inset: 0;
+    z-index: 99;
+  }
+  .img-box {
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    // aspect-ratio: 1;
+    border: 1px solid rgba($color-white, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend%trans2;
+    img {
+      height: 50px;
+    }
+  }
+  .serves-title {
+    @extend%trans2;
+    padding-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    color: $color-white;
+  }
+}
+
+.form-box {
+  .form-group {
+    padding: 12px 0;
+    width: 100%;
+    label {
+      font-size: 16px;
+      color: rgba($color-white, 1);
+      margin-bottom: 12px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      background: transparent;
+      padding: 12px;
+      border: 1px solid rgba($color-white, 1);
+      &:focus {
+        outline: transparent;
+        box-shadow: 0;
+        border: 1px solid rgba($color-white, 1);
+      }
+    }
+    select {
+      color: rgba($color-white, 1);
+      option {
+        color: rgba($color-primary, 1);
+      }
+    }
+    button {
+      border: 0;
+      font-size: 20px;
+      font-weight: 500;
+      color: rgba($color-primary, 1);
+      background-color: rgba($color-white, 1);
+      padding: 10px 30px;
+    }
+  }
+}
