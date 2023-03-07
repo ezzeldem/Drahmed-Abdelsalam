@@ -23,11 +23,12 @@ ul {
 body {
   margin: 0;
   padding: 0;
+  background-color: $color-black;
   font-family: "Cairo", sans-serif;
   background-image: url("../img/3.jpg");
-  background-size: cover;
+  // background-size: 50%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom right;
   height: 100vh;
   position: relative;
   z-index: 1;
@@ -36,7 +37,7 @@ body {
     position: absolute;
     inset: 0;
     z-index: -1;
-    background-color: $color-primary-dark;
+    background-color: $color-black;
     opacity: 0.6;
   }
   // @include dir(rtl) {

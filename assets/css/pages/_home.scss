@@ -1,21 +1,19 @@
 .intro-section {
-  padding: 0px 0 0;
-  height: 91vh;
+  height: 90vh;
+  padding: 40px 0;
   .intro-content {
     .title {
       padding-bottom: 40px;
-      font-size: 60px;
+      font-size: 40px;
       font-weight: 600;
       color: $color-white;
+      text-shadow: 0 1px 3px rgba($color-black, 0.5);
     }
   }
   .img-box {
-    height: 100%;
-    text-align: end;
+    width: 90%;
     img {
-      transform: rotateY(190deg);
-      max-width: 100%;
-      height: 100%;
+      width: 100%;
       text-align: center;
       filter: brightness(1.2) saturate(1.2) contrast(1.01);
     }
@@ -39,8 +37,11 @@
   position: relative;
   text-align: center;
   @extend%trans2;
+  backdrop-filter: blur(3px);
   background-color: rgba($color-primary-dark, 0.3);
-  &:hover {
+  &:hover,
+  &.hover-effect {
+    background-color: rgba($color-white, 0.3);
     .serves-title {
       color: rgba($color-black, 1);
     }
@@ -54,10 +55,10 @@
     inset: 0;
     z-index: 99;
   }
-  .img-box {
+  .serves-img-box {
     margin: 0 auto;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     // aspect-ratio: 1;
     border: 1px solid rgba($color-white, 0.3);
     border-radius: 50%;
@@ -66,14 +67,14 @@
     justify-content: center;
     @extend%trans2;
     img {
-      height: 50px;
+      height: 60px;
     }
   }
   .serves-title {
     @extend%trans2;
     padding-top: 20px;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
     color: $color-white;
   }
 }
@@ -83,7 +84,7 @@
     padding: 12px 0;
     width: 100%;
     label {
-      font-size: 16px;
+      font-size: 20px;
       color: rgba($color-white, 1);
       margin-bottom: 12px;
     }
