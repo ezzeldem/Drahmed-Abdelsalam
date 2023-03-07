@@ -53,13 +53,11 @@ body:after {
 .header-section {
   background-color: white;
 }
-.header-section .logo-box {
-  text-align: end;
-}
 .header-section .logo-box a img {
   height: 80px;
 }
 .header-section .nav-box ul {
+  justify-content: flex-end;
   display: flex;
   align-items: center;
 }

@@ -1,7 +1,6 @@
 .header-section {
   background-color: rgba($color-white, 1);
   .logo-box {
-    text-align: end;
     a {
       img {
         height: 80px;
@@ -10,6 +9,7 @@
   }
   .nav-box {
     ul {
+      justify-content: flex-end;
       display: flex;
       align-items: center;
       li {
